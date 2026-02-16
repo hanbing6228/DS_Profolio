@@ -1,0 +1,67 @@
+/* Custom Color Palette from your config */
+:root {
+    --cream: #F7F5F0;
+    --beige: #E8E4DC;
+    --charcoal: #2C2C2C;
+    --dusty-pink: #C9A9A6;
+    --fidelity-blue: #005293;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cream);
+    color: var(--charcoal);
+    line-height: 1.6;
+}
+
+.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+
+/* Navbar */
+.navbar {
+    background: white;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky; top: 0; z-index: 100;
+}
+.header-inner, .navbar .container { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-weight: bold; letter-spacing: 2px; }
+.logo span { color: var(--dusty-pink); }
+.nav-links { list-style: none; display: flex; gap: 20px; }
+.nav-links a { text-decoration: none; color: var(--charcoal); font-weight: 500; }
+
+/* Hero */
+.hero {
+    padding: 80px 0;
+    background: var(--beige);
+    text-align: center;
+}
+.hero h1 { font-size: 2.5rem; margin-bottom: 10px; color: var(--fidelity-blue); }
+
+/* Sections */
+.section { padding: 60px 0; }
+.bg-alt { background-color: var(--beige); }
+.section-title { text-align: center; margin-bottom: 40px; font-size: 2rem; }
+
+/* Project Cards */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+.card:hover { transform: translateY(-5px); }
+.card h3 { margin-bottom: 15px; color: var(--fidelity-blue); }
+.btn-link { display: inline-block; margin-top: 15px; color: var(--dusty-pink); font-weight: bold; text-decoration: none; }
+
+/* Contact Section */
+.contact-info { text-align: center; background: white; padding: 30px; border-radius: 8px; max-width: 500px; margin: 0 auto; }
+
+footer { text-align: center; padding: 40px 0; font-size: 0.9rem; color: #888; }
